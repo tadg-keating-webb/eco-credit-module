@@ -3,6 +3,7 @@
 namespace TadgKeatingWebb\EcoCreditModule\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Livewire\Livewire;
 
 class EcoCreditModuleProvider extends ServiceProvider
 {
@@ -13,6 +14,14 @@ class EcoCreditModuleProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+        // Register views from the submodule
+        $this->loadViewsFrom(__DIR__.'/../views', 'eco-credit-module');
+
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
+        // Register the Livewire component with an alias
+        Livewire::component('transactions-component', \TadgKeatingWebb\EcoCreditModule\Livewire\TransactionsComponent::class);
+        Livewire::component('transaction-modal', \TadgKeatingWebb\EcoCreditModule\Livewire\TransactionModal::class);
+        Livewire::component('delete-transaction-modal', \TadgKeatingWebb\EcoCreditModule\Livewire\DeleteTransactionModal::class);
     }
 }

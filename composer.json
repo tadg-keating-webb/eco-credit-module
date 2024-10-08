@@ -11,5 +11,12 @@
             "email": "tadgkeating@gmail.com"
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TadgKeatingWebb\\EcoCreditModule\\Providers\\EcoCreditModuleProvider"
+            ]
+        }
+    },
     "require": {}
 }
