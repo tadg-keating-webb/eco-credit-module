@@ -27,7 +27,7 @@
                 <tr>
                     <th>Date</th>
                     <th>Deposit</th>
-                    <th>Withdrawal</th>
+                    <th style="white-space: nowrap;">Withdrawal</th>
                     <th>Balance</th>
                     <th>Actions</th>
                 </tr>
