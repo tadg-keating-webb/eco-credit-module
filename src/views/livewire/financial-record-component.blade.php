@@ -1,4 +1,4 @@
-<table class="table auto-layout">
+<table class="table auto-layout px-2">
     <tbody>
         <tr>
             <td><b>Date when joined</b></td>
