@@ -25,15 +25,12 @@ class TransactionForm extends Form
 
     public function setTransaction(?Transaction $transaction, $userId)
     {
-        dump($transaction->transaction_type);
         $this->transaction = $transaction;
         $this->userId = $userId;
         $this->type = $transaction->type ?? '';
         $this->amount = $transaction->amount ?? 0;
         $this->date = $transaction->date ?? '';
         $this->transaction_type = $transaction->transaction_type ?? '';
-
-        dump($this->transaction_type);
     }
 
     public function save()
