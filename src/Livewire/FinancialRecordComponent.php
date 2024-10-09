@@ -2,12 +2,13 @@
 
 namespace TadgKeatingWebb\EcoCreditModule\Livewire;
 
+use Livewire\Attributes\On;
 use Livewire\Component;
 use TadgKeatingWebb\EcoCreditModule\Models\Transaction;
 
 class FinancialRecordComponent extends Component
 {
-    private int $userId;
+    public $userId;
 
     public string $joinDate;
 
@@ -28,7 +29,7 @@ class FinancialRecordComponent extends Component
 
     public int $totalPenaltyAmount = 0;
 
-    public function mount(int $userId)
+    public function mount($userId)
     {
         $this->userId = $userId;
 
@@ -40,7 +41,8 @@ class FinancialRecordComponent extends Component
         return view('eco-credit-module::livewire.financial-record-component');
     }
 
-    private function setup()
+    #[On('refresh-transactions')]
+    public function setup()
     {
         $this->transactions = $this->transactions = Transaction::where('user_id', $this->userId)
             ->where('transaction_type', 'loan')
