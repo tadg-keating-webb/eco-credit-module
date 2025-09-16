@@ -31,14 +31,14 @@ composer require livewire/livewire:^3.0 livewire-ui/modal:^2.0
 2) Require this package:
 
 ```bash
-composer require tadg-keating-webb/eco-credit-module:dev-main
+composer require eco-credit/eco-credit-module.git:dev-main
 ```
 
 If the repository is not yet on Packagist, add a VCS repository entry to your app's `composer.json` first:
 
 ```json
 "repositories": [
-  { "type": "vcs", "url": "https://github.com/tadg-keating-webb/eco-credit-module" }
+  { "type": "vcs", "url": "https://github.com/eco-credit/eco-credit-module.git" }
 ]
 ```
 
