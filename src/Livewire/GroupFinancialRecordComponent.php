@@ -1,9 +1,9 @@
 <?php
 
-namespace TadgKeatingWebb\EcoCreditModule\Livewire;
+namespace EcoCredit\EcoCreditModule\Livewire;
 
 use Livewire\Component;
-use TadgKeatingWebb\EcoCreditModule\Models\Transaction;
+use EcoCredit\EcoCreditModule\Models\Transaction;
 
 class GroupFinancialRecordComponent extends Component
 {

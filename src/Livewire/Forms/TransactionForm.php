@@ -1,10 +1,10 @@
 <?php
 
-namespace TadgKeatingWebb\EcoCreditModule\Livewire\Forms;
+namespace EcoCredit\EcoCreditModule\Livewire\Forms;
 
 use Livewire\Attributes\Validate;
 use Livewire\Form;
-use TadgKeatingWebb\EcoCreditModule\Models\Transaction;
+use EcoCredit\EcoCreditModule\Models\Transaction;
 
 class TransactionForm extends Form
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace TadgKeatingWebb\EcoCreditModule\Models;
+namespace EcoCredit\EcoCreditModule\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

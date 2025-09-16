@@ -1,10 +1,10 @@
 <?php
 
-namespace TadgKeatingWebb\EcoCreditModule\Livewire;
+namespace EcoCredit\EcoCreditModule\Livewire;
 
 use LivewireUI\Modal\ModalComponent;
-use TadgKeatingWebb\EcoCreditModule\Livewire\Forms\TransactionForm;
-use TadgKeatingWebb\EcoCreditModule\Models\Transaction;
+use EcoCredit\EcoCreditModule\Livewire\Forms\TransactionForm;
+use EcoCredit\EcoCreditModule\Models\Transaction;
 
 class TransactionModal extends ModalComponent
 {

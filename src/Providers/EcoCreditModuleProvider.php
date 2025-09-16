@@ -1,6 +1,6 @@
 <?php
 
-namespace TadgKeatingWebb\EcoCreditModule\Providers;
+namespace EcoCredit\EcoCreditModule\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;

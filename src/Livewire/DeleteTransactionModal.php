@@ -1,9 +1,9 @@
 <?php
 
-namespace TadgKeatingWebb\EcoCreditModule\Livewire;
+namespace EcoCredit\EcoCreditModule\Livewire;
 
 use LivewireUI\Modal\ModalComponent;
-use TadgKeatingWebb\EcoCreditModule\Models\Transaction;
+use EcoCredit\EcoCreditModule\Models\Transaction;
 
 class DeleteTransactionModal extends ModalComponent
 {
